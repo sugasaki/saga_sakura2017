@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+
+    <!--angular-bootstrap-->
+    <link href="bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet" />
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!--<link href="bower_components/honoka/dist/css/bootstrap.min.css" rel="stylesheet" />-->
+    <!--<link href="bower_components/angular-ui-layout/src/ui-layout.css" rel="stylesheet" />-->
+
+    <!--スタイルシート-->
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="bower_components/angular-dashboard-framework/dist/angular-dashboard-framework.min.css" rel="stylesheet" />
+    
+    <!--<link href="app/css/style.css" rel="stylesheet" />-->
+
+
+    <!-- inlince css -->
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+      /* fixe for modal-backdrop*/
+      .modal-backdrop {
+        bottom: 0;
+        /* some fixes appear to use this, too: */
+        position: fixed;
+      }
+    </style>
+
+</head>
+
+
+<body ng-app="app" ng-class="{'debug-sref': debug.uisref, 'debug-view': debug.uiview}">
+
+    
+    <!--<button ng-click="debug.uiview = !debug.uiview">{{ debug.uiview ? "disable" : "enable"}} ui-view debug</button>
+    <button ng-click="debug.uisref = !debug.uisref">{{ debug.uisref ? "disable" : "enable"}} ui-sref debug</button>
+
+
+
+    <div class="nav">
+        <a ui-sref="parent.main" ui-sref-active="active">main</a>
+        <a ui-sref="parent.search" ui-sref-active="active">Test</a>
+        <a ui-sref="parent.child2" ui-sref-active="active">Test1</a>
+    </div>-->
+
+
+    <!--header<div ui-view="header"></div>
+    content
+    <div ui-view="content"><div ui-view></div></div>
+
+    footer<div ui-view="footer"></div>-->
+
+
+
+    <ui-view autoscroll="false"></ui-view>
+
+
+
+
+
+
+    <!--jquery-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+
+    <!--bootstrap-->
+    <!--<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <script src="bower_components/honoka/dist/js/bootstrap.min.js"></script>
+
+    <!--angular-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-ui-layout/src/ui-layout.js"></script>
+
+    <script src="bower_components/underscore/underscore-min.js"></script> <!--underscoreとunderscoreはセットにしないと動作しない-->
+    <script src="bower_components/restangular/dist/restangular.min.js"></script> <!--underscoreとunderscoreはセットにしないと動作しない-->
+    <!--angular-bootstrap-->
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <!--angular-local-storage-->
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+
+
+    <!-- Sortable -->
+    <script src="bower_components/Sortable/Sortable.min.js"></script>
+
+    <!-- angular-dashboard-framework -->
+    <script src="bower_components/angular-dashboard-framework/dist/angular-dashboard-framework.js"></script>
+    <!--<script src="bower_components/angular-dashboard-framework/dist/angular-dashboard-framework.min.js"></script>-->
+    <script src="bower_components/adf-structures-base/dist/adf-structures-base.min.js"></script>
+
+
+
+    <!-- Visualizer and url -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="//unpkg.com/show-current-browser-url"></script>
+    <script src="//unpkg.com/d3@3"></script>
+    <script src="//unpkg.com/@uirouter/visualizer@4.0.2"></script>
+
+
+
+    <!--App-->
+    <script src="app/app.js"></script>
+
+    <!--<script src="app/controller/mainCtlr.js"></script>
+    <script src="app/controller/headerCtrl.js"></script>
+    <script src="app/controller/footerCtrl.js"></script>-->
+
+
+
+</body>
+</html>

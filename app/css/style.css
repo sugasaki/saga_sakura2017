@@ -1,0 +1,75 @@
+﻿
+
+body {
+    font-size: 12px;
+    background-color: #f0f0f0;
+    margin:0;
+    padding:0;
+}
+
+
+}
+
+.container {
+    width: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: auto;
+    }
+}
+
+
+
+button.btn {
+    display: table-cell;
+}
+
+
+
+
+/*モーダルウィンドウ*/
+.modal-dialog .your-modal-class {
+    max-height: calc(100% - 60px);
+}
+
+.modal-dialog .modal-content .your-modal-class {
+    max-height: 100%;
+}
+
+.modal-dialog .modal-content .modal-body .your-modal-class {
+    max-height: calc(100% - 120px);
+    overflow-y: scroll;
+}
+
+.modal-body {
+    /*画面からはみ出した場合にはスクロールバーを表示*/
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+.modal-xlg {
+    width: 95%;
+    min-width: 900px;
+    max-width: 1200px;
+}
+
+
+
+
+
+.ui-splitbar {
+    background-color: #f0f0f0;
+}
+
+.ui-layout-row > .ui-splitbar {
+    background: linear-gradient(to bottom, #f0f0f0 0%, #f0f0f0 100%);
+}
+
+.ui-layout-column > .ui-splitbar {
+    background: linear-gradient(to bottom, #f0f0f0 0%, #f0f0f0 100%);
+}
+
+
+
